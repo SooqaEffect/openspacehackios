@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496C0D36254447AE001DDC47 /* WaterMetersCameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C0D35254447AE001DDC47 /* WaterMetersCameraPresenter.swift */; };
+		496C0D3B254447EA001DDC47 /* WaterMetersPresenterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C0D3A254447EA001DDC47 /* WaterMetersPresenterProtocols.swift */; };
+		496C0D3E25444AFF001DDC47 /* WaterMetersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C0D3D25444AFF001DDC47 /* WaterMetersAssembly.swift */; };
+		496C0D4125445799001DDC47 /* WaterMetersCameraInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C0D4025445798001DDC47 /* WaterMetersCameraInteractorProtocols.swift */; };
+		496C0D442544598E001DDC47 /* WaterMetersCameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C0D432544598E001DDC47 /* WaterMetersCameraInteractor.swift */; };
+		496C0D482544756A001DDC47 /* Counters.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 496C0D472544756A001DDC47 /* Counters.mlmodel */; };
+		496C0D4B25449228001DDC47 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C0D4A25449227001DDC47 /* UIColorExtensions.swift */; };
+		496C0D4F2544A28A001DDC47 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496C0D4E2544A28A001DDC47 /* Launch Screen.storyboard */; };
+		49F4C3F82543310000652B80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C3F72543310000652B80 /* AppDelegate.swift */; };
+		49F4C4012543310200652B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F4C4002543310200652B80 /* Assets.xcassets */; };
+		49F4C4142543321800652B80 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C4132543321800652B80 /* NetworkResponse.swift */; };
+		49F4C4182543327100652B80 /* NetworkResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C4172543327100652B80 /* NetworkResponseError.swift */; };
+		49F4C41D2543329400652B80 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C41C2543329400652B80 /* HTTPMethod.swift */; };
+		49F4C4222543334100652B80 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C4212543334100652B80 /* NetworkManager.swift */; };
+		49F4C429254336F400652B80 /* WaterMetersNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C428254336F400652B80 /* WaterMetersNetworkManager.swift */; };
+		49F4C42F2543384100652B80 /* WaterMetersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C42E2543384100652B80 /* WaterMetersEntity.swift */; };
+		49F4C4342543430900652B80 /* URLManagerBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C4332543430800652B80 /* URLManagerBaseProtocol.swift */; };
+		49F4C4382543431300652B80 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C4372543431300652B80 /* URLManager.swift */; };
+		49F4C43B254343E700652B80 /* WaterMetersURLManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C43A254343E700652B80 /* WaterMetersURLManagerProtocol.swift */; };
+		49F4C43F2543446F00652B80 /* WaterMetersNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C43E2543446F00652B80 /* WaterMetersNetworkManagerImpl.swift */; };
+		49F4C4442543463E00652B80 /* BaseURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C4432543463E00652B80 /* BaseURLRequest.swift */; };
+		49F4C447254346D900652B80 /* NetworkContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C446254346D900652B80 /* NetworkContentType.swift */; };
+		49F4C44D25434ECC00652B80 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C44C25434ECC00652B80 /* DataExtensions.swift */; };
+		49F4C4512543514C00652B80 /* BaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C4502543514C00652B80 /* BaseNetworkManager.swift */; };
+		49F4C45C2543559F00652B80 /* WaterMeterCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F4C45B2543559F00652B80 /* WaterMeterCamera.storyboard */; };
+		49F4C46225435A2600652B80 /* WaterMetersCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4C46125435A2600652B80 /* WaterMetersCameraViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		496C0D35254447AE001DDC47 /* WaterMetersCameraPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersCameraPresenter.swift; sourceTree = "<group>"; };
+		496C0D3A254447EA001DDC47 /* WaterMetersPresenterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersPresenterProtocols.swift; sourceTree = "<group>"; };
+		496C0D3D25444AFF001DDC47 /* WaterMetersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersAssembly.swift; sourceTree = "<group>"; };
+		496C0D4025445798001DDC47 /* WaterMetersCameraInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersCameraInteractorProtocols.swift; sourceTree = "<group>"; };
+		496C0D432544598E001DDC47 /* WaterMetersCameraInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersCameraInteractor.swift; sourceTree = "<group>"; };
+		496C0D472544756A001DDC47 /* Counters.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Counters.mlmodel; sourceTree = "<group>"; };
+		496C0D4A25449227001DDC47 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		496C0D4E2544A28A001DDC47 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		49F4C3F42543310000652B80 /* OpenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F4C3F72543310000652B80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49F4C4002543310200652B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49F4C4052543310200652B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F4C4132543321800652B80 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		49F4C4172543327100652B80 /* NetworkResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseError.swift; sourceTree = "<group>"; };
+		49F4C41C2543329400652B80 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		49F4C4212543334100652B80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		49F4C428254336F400652B80 /* WaterMetersNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersNetworkManager.swift; sourceTree = "<group>"; };
+		49F4C42E2543384100652B80 /* WaterMetersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersEntity.swift; sourceTree = "<group>"; };
+		49F4C4332543430800652B80 /* URLManagerBaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManagerBaseProtocol.swift; sourceTree = "<group>"; };
+		49F4C4372543431300652B80 /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
+		49F4C43A254343E700652B80 /* WaterMetersURLManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersURLManagerProtocol.swift; sourceTree = "<group>"; };
+		49F4C43E2543446F00652B80 /* WaterMetersNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersNetworkManagerImpl.swift; sourceTree = "<group>"; };
+		49F4C4432543463E00652B80 /* BaseURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLRequest.swift; sourceTree = "<group>"; };
+		49F4C446254346D900652B80 /* NetworkContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkContentType.swift; sourceTree = "<group>"; };
+		49F4C44C25434ECC00652B80 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		49F4C4502543514C00652B80 /* BaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkManager.swift; sourceTree = "<group>"; };
+		49F4C45B2543559F00652B80 /* WaterMeterCamera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaterMeterCamera.storyboard; sourceTree = "<group>"; };
+		49F4C46125435A2600652B80 /* WaterMetersCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMetersCameraViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49F4C3F12543310000652B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		496C0D38254447CC001DDC47 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				496C0D3A254447EA001DDC47 /* WaterMetersPresenterProtocols.swift */,
+				496C0D4025445798001DDC47 /* WaterMetersCameraInteractorProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		496C0D39254447D3001DDC47 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C46125435A2600652B80 /* WaterMetersCameraViewController.swift */,
+				496C0D432544598E001DDC47 /* WaterMetersCameraInteractor.swift */,
+				496C0D35254447AE001DDC47 /* WaterMetersCameraPresenter.swift */,
+				49F4C42E2543384100652B80 /* WaterMetersEntity.swift */,
+				496C0D3D25444AFF001DDC47 /* WaterMetersAssembly.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		496C0D4625447543001DDC47 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				496C0D472544756A001DDC47 /* Counters.mlmodel */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		49F4C3EB254330FF00652B80 = {
+			isa = PBXGroup;
+			children = (
+				49F4C3F62543310000652B80 /* OpenApp */,
+				49F4C3F52543310000652B80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49F4C3F52543310000652B80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C3F42543310000652B80 /* OpenApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49F4C3F62543310000652B80 /* OpenApp */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C4542543557B00652B80 /* Resources */,
+				49F4C4262543346600652B80 /* Source */,
+				49F4C3F72543310000652B80 /* AppDelegate.swift */,
+				49F4C4002543310200652B80 /* Assets.xcassets */,
+				49F4C4052543310200652B80 /* Info.plist */,
+				496C0D4E2544A28A001DDC47 /* Launch Screen.storyboard */,
+			);
+			path = OpenApp;
+			sourceTree = "<group>";
+		};
+		49F4C40F254331A700652B80 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C410254331BE00652B80 /* Network */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		49F4C410254331BE00652B80 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C420254332FA00652B80 /* Implementation */,
+				49F4C412254331ED00652B80 /* Models */,
+				49F4C411254331DA00652B80 /* Protocols */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		49F4C411254331DA00652B80 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C432254342DB00652B80 /* Base */,
+				49F4C4272543367000652B80 /* WaterMeters */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		49F4C412254331ED00652B80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C4132543321800652B80 /* NetworkResponse.swift */,
+				49F4C4172543327100652B80 /* NetworkResponseError.swift */,
+				49F4C41C2543329400652B80 /* HTTPMethod.swift */,
+				49F4C4432543463E00652B80 /* BaseURLRequest.swift */,
+				49F4C446254346D900652B80 /* NetworkContentType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49F4C420254332FA00652B80 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C45E254357BC00652B80 /* Water Meters */,
+				49F4C43D2543445E00652B80 /* Base */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		49F4C4262543346600652B80 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C44A25434EBA00652B80 /* Common */,
+				49F4C42C2543382600652B80 /* Presentation Layer */,
+				49F4C40F254331A700652B80 /* Data Layer */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		49F4C4272543367000652B80 /* WaterMeters */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C428254336F400652B80 /* WaterMetersNetworkManager.swift */,
+				49F4C43A254343E700652B80 /* WaterMetersURLManagerProtocol.swift */,
+			);
+			path = WaterMeters;
+			sourceTree = "<group>";
+		};
+		49F4C42C2543382600652B80 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C42D2543382E00652B80 /* WaterMeters */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		49F4C42D2543382E00652B80 /* WaterMeters */ = {
+			isa = PBXGroup;
+			children = (
+				496C0D39254447D3001DDC47 /* Module */,
+				496C0D38254447CC001DDC47 /* Protocols */,
+			);
+			path = WaterMeters;
+			sourceTree = "<group>";
+		};
+		49F4C432254342DB00652B80 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C4212543334100652B80 /* NetworkManager.swift */,
+				49F4C4332543430800652B80 /* URLManagerBaseProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		49F4C43D2543445E00652B80 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C4372543431300652B80 /* URLManager.swift */,
+				49F4C4502543514C00652B80 /* BaseNetworkManager.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		49F4C44A25434EBA00652B80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C44B25434EBF00652B80 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		49F4C44B25434EBF00652B80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C44C25434ECC00652B80 /* DataExtensions.swift */,
+				496C0D4A25449227001DDC47 /* UIColorExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		49F4C4542543557B00652B80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				496C0D4625447543001DDC47 /* ML Model */,
+				49F4C4552543558400652B80 /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49F4C4552543558400652B80 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C45B2543559F00652B80 /* WaterMeterCamera.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		49F4C45E254357BC00652B80 /* Water Meters */ = {
+			isa = PBXGroup;
+			children = (
+				49F4C43E2543446F00652B80 /* WaterMetersNetworkManagerImpl.swift */,
+			);
+			path = "Water Meters";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49F4C3F32543310000652B80 /* OpenApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F4C4082543310200652B80 /* Build configuration list for PBXNativeTarget "OpenApp" */;
+			buildPhases = (
+				49F4C3F02543310000652B80 /* Sources */,
+				49F4C3F12543310000652B80 /* Frameworks */,
+				49F4C3F22543310000652B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenApp;
+			productName = OpenApp;
+			productReference = 49F4C3F42543310000652B80 /* OpenApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49F4C3EC254330FF00652B80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					49F4C3F32543310000652B80 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 49F4C3EF254330FF00652B80 /* Build configuration list for PBXProject "OpenApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49F4C3EB254330FF00652B80;
+			productRefGroup = 49F4C3F52543310000652B80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49F4C3F32543310000652B80 /* OpenApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49F4C3F22543310000652B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496C0D4F2544A28A001DDC47 /* Launch Screen.storyboard in Resources */,
+				49F4C4012543310200652B80 /* Assets.xcassets in Resources */,
+				49F4C45C2543559F00652B80 /* WaterMeterCamera.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49F4C3F02543310000652B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496C0D442544598E001DDC47 /* WaterMetersCameraInteractor.swift in Sources */,
+				49F4C42F2543384100652B80 /* WaterMetersEntity.swift in Sources */,
+				496C0D4125445799001DDC47 /* WaterMetersCameraInteractorProtocols.swift in Sources */,
+				49F4C43B254343E700652B80 /* WaterMetersURLManagerProtocol.swift in Sources */,
+				49F4C4222543334100652B80 /* NetworkManager.swift in Sources */,
+				496C0D3E25444AFF001DDC47 /* WaterMetersAssembly.swift in Sources */,
+				49F4C4382543431300652B80 /* URLManager.swift in Sources */,
+				496C0D3B254447EA001DDC47 /* WaterMetersPresenterProtocols.swift in Sources */,
+				49F4C43F2543446F00652B80 /* WaterMetersNetworkManagerImpl.swift in Sources */,
+				49F4C4512543514C00652B80 /* BaseNetworkManager.swift in Sources */,
+				49F4C4342543430900652B80 /* URLManagerBaseProtocol.swift in Sources */,
+				49F4C4442543463E00652B80 /* BaseURLRequest.swift in Sources */,
+				49F4C4182543327100652B80 /* NetworkResponseError.swift in Sources */,
+				49F4C429254336F400652B80 /* WaterMetersNetworkManager.swift in Sources */,
+				49F4C3F82543310000652B80 /* AppDelegate.swift in Sources */,
+				496C0D4B25449228001DDC47 /* UIColorExtensions.swift in Sources */,
+				49F4C46225435A2600652B80 /* WaterMetersCameraViewController.swift in Sources */,
+				496C0D36254447AE001DDC47 /* WaterMetersCameraPresenter.swift in Sources */,
+				49F4C41D2543329400652B80 /* HTTPMethod.swift in Sources */,
+				49F4C44D25434ECC00652B80 /* DataExtensions.swift in Sources */,
+				49F4C4142543321800652B80 /* NetworkResponse.swift in Sources */,
+				49F4C447254346D900652B80 /* NetworkContentType.swift in Sources */,
+				496C0D482544756A001DDC47 /* Counters.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49F4C4062543310200652B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49F4C4072543310200652B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49F4C4092543310200652B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24JXP22GSE;
+				INFOPLIST_FILE = OpenApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.openspacehack.OpenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		49F4C40A2543310200652B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24JXP22GSE;
+				INFOPLIST_FILE = OpenApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.openspacehack.OpenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49F4C3EF254330FF00652B80 /* Build configuration list for PBXProject "OpenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F4C4062543310200652B80 /* Debug */,
+				49F4C4072543310200652B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49F4C4082543310200652B80 /* Build configuration list for PBXNativeTarget "OpenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F4C4092543310200652B80 /* Debug */,
+				49F4C40A2543310200652B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49F4C3EC254330FF00652B80 /* Project object */;
+}
